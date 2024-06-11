@@ -1,4 +1,4 @@
- // Copyright Druid Mechanics
+// Copyright Druid Mechanics
 
 #pragma once
 
@@ -12,11 +12,11 @@ class AURA_API AAuraCharacterBase : public ACharacter
 	GENERATED_BODY()
 
 public:
-
 	AAuraCharacterBase();
 
 protected:
-
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditAnywhere, Category="Weapon")
+	TObjectPtr<USkeletalMeshComponent> Weapon;
 };
