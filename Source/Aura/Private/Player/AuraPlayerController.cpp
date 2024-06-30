@@ -32,8 +32,9 @@ void AAuraPlayerController::CursorTrace()
 	LastActor = ThisActor;
 	ThisActor = Cast<IEnemyInterface>(CursorHit.GetActor());
 
-	CursorHit.GetActor()->GetClass()->ImplementsInterface(UEnemyInterface::StaticClass());
-	CursorHit.GetActor()->Implements<UEnemyInterface>();
+	//CursorHit.GetActor()->GetClass()->ImplementsInterface(UEnemyInterface::StaticClass());
+	//CursorHit.GetActor()->Implements<UEnemyInterface>();
+	
 	//Only do sth when we switch from actor to actor		
 	if(LastActor != ThisActor)
 	{
